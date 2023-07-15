@@ -1,0 +1,36 @@
+<h1 class="text-center mt-5">Welcome To  MessageMe -a Complete Chat App</h1>
+<div class="p-5 text-center">
+  <%= image_tag("coffee(1).svg", height: 70)%>
+</div>
+<h3 class="h3 text-center">Log In To Continue</h3>
+<div class="d-flex justify-content-center mt-5">
+  <%=form_for(:session, url: login_path) do |f|%>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <%=f.text_field :username, placeholder: "Username", class: "form-control"%>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <%=f.password_field :password, placeholder: "Password", class: "form-control"%>
+    </div>
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+
+      </div>
+
+      <div class="col">
+
+    </div>
+
+    <!-- Submit button -->
+      <%=f.button "Login",class: "btn text-light btn-block mb-4",style: "background-color: #FF8C00" %>
+
+
+    <!-- Register buttons -->
+    </div>
+  <%end %>
+</div>
